@@ -1,91 +1,137 @@
-/* ====== GLOBAL ====== */
-body {
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    background-color: #f4f6f8;
+/* RESET */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6fb;
     color: #2c3e50;
 }
 
-/* ====== CONTAINER ====== */
-.container {
-    max-width: 900px;
-    margin: 40px auto;
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* ====== HEADER ====== */
-.header {
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(135deg, #4a00e0, #1e90ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    margin-bottom: 40px;
+    color: white;
 }
 
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: white;
+    color: #1e90ff;
+}
+
+.btn-secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1000px;
+    margin: -80px auto 60px;
+    padding: 0 20px;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.center {
+    text-align: center;
+}
+
+/* PROFIL */
 .profile-img {
     width: 140px;
-    height: 140px;
     border-radius: 50%;
     margin-bottom: 15px;
 }
 
-h1 {
-    margin: 10px 0;
-    color: #1e3799;
-}
-
+/* TITRES */
 h2 {
     color: #1e3799;
-    border-bottom: 2px solid #1e3799;
-    padding-bottom: 5px;
-    margin-top: 40px;
 }
 
-/* ====== TEXTE ====== */
-p {
-    font-size: 16px;
-    line-height: 1.6;
+h3 {
+    margin-bottom: 15px;
+    color: #1e3799;
 }
 
-/* ====== LISTES ====== */
-ul {
-    padding-left: 20px;
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-li {
-    margin-bottom: 8px;
+.skills span {
+    background: #e8ecff;
+    color: #1e3799;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
 }
 
-/* ====== LIENS ====== */
-a {
-    color: #0984e3;
+/* PROJET */
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #1e90ff;
+    font-weight: 600;
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+/* LIENS */
+.links li {
+    list-style: none;
+    margin-bottom: 8px;
 }
 
-/* ====== BOUTON ====== */
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #1e3799;
-    color: white;
-    border-radius: 5px;
-    margin-top: 10px;
+.links a {
+    text-decoration: none;
+    color: #1e90ff;
 }
 
-.btn:hover {
-    background-color: #4a69bd;
-}
-
-/* ====== FOOTER ====== */
+/* FOOTER */
 footer {
     text-align: center;
-    margin-top: 50px;
-    font-size: 14px;
+    padding: 20px;
     color: #7f8c8d;
 }
-
