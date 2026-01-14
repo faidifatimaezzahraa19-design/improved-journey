@@ -2,78 +2,73 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Fatima Zahra Faidi | Data Science Portfolio</title>
-
-    <!-- Lien vers le CSS -->
+    <title>Fatima Zahra Faidi | Portfolio Data Science</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div class="container">
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Créer une identité<br>Data Science moderne</h1>
+        <p>Portfolio académique & professionnel – Data Science & BI</p>
 
-        <!-- HEADER -->
-        <header class="header">
-            <img src="images/photo.jpg" alt="Photo de profil" class="profile-img">
-            <h1>Fatima Zahra Faidi</h1>
-            <p>Étudiante en Data Science & Business Intelligence</p>
-        </header>
-
-        <!-- À PROPOS -->
-        <section>
-            <h2>À propos de moi</h2>
-            <p>
-                Étudiante passionnée par la Data Science, l’analyse de données et la Business Intelligence.
-                Intéressée par les projets de machine learning, data analytics et visualisation.
-            </p>
-        </section>
-
-        <!-- COMPÉTENCES -->
-        <section>
-            <h2>Compétences</h2>
-            <ul>
-                <li>Python (Pandas, NumPy, Scikit-learn)</li>
-                <li>SQL & Bases de données</li>
-                <li>Power BI / Data Visualization</li>
-                <li>Git & GitHub</li>
-                <li>Machine Learning</li>
-            </ul>
-        </section>
-
-        <!-- PROJETS -->
-        <section>
-            <h2>Projets</h2>
-            <ul>
-                <li>
-                    <strong>Prédiction du Churn Client</strong><br>
-                    <a href="https://github.com/USERNAME/churn-prediction-project" target="_blank">
-                        Voir le projet sur GitHub
-                    </a>
-                </li>
-            </ul>
-        </section>
-
-        <!-- CV -->
-        <section>
-            <h2>Curriculum Vitae</h2>
-            <a href="cv.pdf" class="btn" download>Télécharger mon CV (PDF)</a>
-        </section>
-
-        <!-- LIENS -->
-        <section>
-            <h2>Liens professionnels</h2>
-            <ul>
-                <li><a href="https://github.com/USERNAME" target="_blank">GitHub</a></li>
-                <li><a href="https://www.kaggle.com/USERNAME" target="_blank">Kaggle</a></li>
-            </ul>
-        </section>
-
-        <!-- FOOTER -->
-        <footer>
-            <p>© 2026 – Fatima Zahra Faidi</p>
-        </footer>
-
+        <div class="hero-buttons">
+            <a href="#projets" class="btn-primary">Voir mes projets</a>
+            <a href="cv.pdf" class="btn-secondary" download>Télécharger CV</a>
+        </div>
     </div>
+</section>
+
+<!-- CONTENU -->
+<div class="container">
+
+    <!-- PROFIL -->
+    <section class="card center">
+        <img src="images/photo.jpg" class="profile-img">
+        <h2>Fatima Zahra Faidi</h2>
+        <p>Étudiante en Data Science & Business Intelligence</p>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section class="card">
+        <h3>Compétences</h3>
+        <div class="skills">
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>Machine Learning</span>
+            <span>SQL</span>
+            <span>Power BI</span>
+            <span>GitHub</span>
+        </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="card" id="projets">
+        <h3>Projets</h3>
+        <div class="project">
+            <h4>Prédiction du Churn Client</h4>
+            <p>Analyse, machine learning et interprétation métier.</p>
+            <a href="https://github.com/USERNAME/churn-prediction-project" target="_blank">
+                Voir sur GitHub →
+            </a>
+        </div>
+    </section>
+
+    <!-- LIENS -->
+    <section class="card">
+        <h3>Présence en ligne</h3>
+        <ul class="links">
+            <li><a href="https://github.com/USERNAME" target="_blank">GitHub</a></li>
+            <li><a href="https://www.kaggle.com/USERNAME" target="_blank">Kaggle</a></li>
+        </ul>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 – Fatima Zahra Faidi
+</footer>
 
 </body>
 </html>
-
